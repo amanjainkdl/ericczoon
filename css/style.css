@@ -1,0 +1,514 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Ericsson Hilda", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 3;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav li {
+    padding: 20px;
+}
+
+nav li .logo {
+    font-weight: 100;
+    font-size: 40px;
+}
+
+nav li:hover i {
+    transform: rotate(180deg);
+}
+
+#one {
+    display: flex;
+    height: 580px;
+    width: 100%;
+    background: url('https://source.unsplash.com/random/1349x580?study') no-repeat center/cover;
+}
+
+#one::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 580px;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+#one .box {
+    width: 50px;
+    height: 50px;
+    position: sticky;
+    background-color: white;
+    z-index: 2;
+}
+
+#one .itemOne {
+    left: 1250px;
+    top: 150px;
+}
+
+#one .itemTwo {
+    left: 1250px;
+    top: 200px;
+    display: none;
+}
+
+#one .itemThree {
+    left: 1250px;
+    top: 250px;
+    display: none;
+}
+
+#one .itemfour {
+    left: 1250px;
+    top: 300px;
+    display: none;
+}
+
+#one .itemfifth {
+    left: 1250px;
+    top: 350px;
+    display: none;
+}
+
+#one .icon {
+    font-size: 40px;
+    margin-left: 6px;
+    margin-top: 5px;
+}
+
+/* section .itemOne:hover section .itemTwo {
+    display: block;
+} */
+
+.heading {
+    position: relative;
+    color: white;
+    top: 120px;
+    height: 200px;
+    z-index: 2;
+}
+
+.headingBtn {
+    position: relative;
+    top: 50px;
+    padding: 10px;
+    width: 30%;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    outline: none;
+}
+
+.headingBtn:hover {
+    background-color: white;
+    color: black;
+}
+
+.heading .mainHead {
+    font-size: 50px;
+}
+
+#sectionTwo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.sectionTwoHeading {
+    position: relative;
+    left: 40px;
+    padding-top: 50px;
+    font-size: 2rem;
+    width: 90%;
+}
+
+.sectionTwoImages {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.sectionTwoImages div {
+    width: 45%;
+    height: 300px;
+    background-color: darkorange;
+    margin-top: 50px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.sectionTwoImages span {
+    z-index: 2;
+    padding: 10px;
+}
+
+.sectionTwoImages .image-1 {
+    background: url('https://source.unsplash.com/random/1349x580?mobile') no-repeat center/cover;
+}
+
+.sectionTwoImages .image-2 {
+    background: url('https://source.unsplash.com/random/1349x580?Iot') no-repeat center/cover;
+}
+
+.sectionTwoImages .image-3 {
+    background: url('https://source.unsplash.com/random/1349x580?logistic') no-repeat center/cover;
+}
+
+.sectionTwoImages .image-4 {
+    background: url('https://source.unsplash.com/random/1349x580?5g') no-repeat center/cover;
+}
+
+.sectionTwoImages div::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 300px;
+    width: 45%;
+    z-index: 1;
+    opacity: 0.6;
+}
+
+.sectionTwoImages a {
+    color: white;
+}
+
+.sectionTwoImages p {
+    color: white;
+    padding: 4px;
+}
+
+#sectionThree {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 95%;
+    margin: 50px auto;
+    height: 250px;
+    background-color: #f1f1f1;
+}
+
+#sectionThree div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionThreeLeft p {
+    font-size: 40px;
+    width: 50%;
+    font-size: 2.5rem;
+}
+
+.sectionThreeRight span {
+    width: 98%;
+}
+
+.sectionThreeRight p {
+    font-size: 18px;
+}
+
+.sectionThreeRight button {
+    padding: 10px;
+    background-color: #4d97ed;
+    border-color: #4d97ed;
+    outline: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+#sectionFour {
+    display: flex;
+    justify-content: space-around;
+}
+
+#sectionFour div {
+    width: 45%;
+    height: 300px;
+}
+
+.sectionFourLeft {
+    background: url('https://source.unsplash.com/random/1349x580?people') no-repeat center/cover;
+}
+
+.sectionFourRight {
+    display: flex;
+    align-items: flex-start;
+}
+
+.sectionFourRight span h3 {
+    font-size: 20px;
+    padding: 5px;
+}
+
+.sectionFourRight span p {
+    font-size: 15px;
+    padding: 5px;
+}
+
+.sectionFourRight span button {
+    margin-top: 5px;
+    padding: 8px;
+    width: 130px;
+    height: 40px;
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid;
+}
+
+.sectionFourRight span button:hover {
+    background-color: #292929;
+    color: white;
+    border: none;
+}
+
+#sectionFive {
+    display: flex;
+    width: 95%;
+    margin: 100px auto;
+    justify-content: space-between;
+}
+
+#sectionFive>div {
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 22%;
+}
+
+#sectionFive>div>div {
+    height: 50%;
+}
+
+.box1Bottom, .box2Bottom, .box3Bottom, .box4Bottom {
+    display: flex;
+    align-items: center;
+}
+
+#sectionFive p, h3 {
+    padding: 3px;
+}
+
+#sectionFive .box-1 .box1Top {
+    background: url('https://source.unsplash.com/random/1349x580?machine') no-repeat center/cover;
+}
+
+#sectionFive .box-2 .box2Top {
+    background: url('https://source.unsplash.com/random/1349x580?tech') no-repeat center/cover;
+}
+
+#sectionFive .box-3 .box3Top {
+    background: url('https://source.unsplash.com/random/1349x580?automation') no-repeat center/cover;
+}
+
+#sectionFive .box-4 .box4Top {
+    background: url('https://source.unsplash.com/random/1349x580?security') no-repeat center/cover;
+}
+
+#footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 100px auto 0px;
+    color: white;
+    background-color: black;
+}
+
+#footer .footer-1 {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+#footer .logo {
+    display: flex;
+    flex-basis: 10%;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
+
+#footer .icons {
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+}
+
+#footer .footer-2 {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    height: 250px;
+    background-color: black;
+}
+
+.footer-2 div {
+    width: 22%;
+}
+
+#footer ul {
+    list-style: none;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+#footer li {
+    padding-top: 10px;
+}
+
+#footer .footer-3 {
+    height: 150px;
+    background-color: black;
+}
+
+.footer-2 div {
+    display: flex;
+}
+
+/* .detailBox-1 {
+    background-color: tomato;
+}
+
+.detailBox-2 {
+    background-color: red;
+}
+
+.detailBox-3 {
+    background-color: yellowgreen;
+}
+
+.detailBox-4 {
+    background-color: purple;
+} */
+
+.footer-3{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-top: 1px solid white;
+    width: 95%;
+    margin: auto;
+}
+
+@media only screen and (max-width:700px) {
+    * {
+        font-family: 'Bitter', serif;
+    }
+    nav {
+        position: relative;
+    }
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    .sectionTwoImages {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sectionTwoImages div {
+        width: 90%;
+    }
+    .sectionTwoImages div::before {
+        width: 90%;
+    }
+    #sectionThree {
+        flex-direction: column;
+        align-items: center;
+        height: 400px;
+        width: 90%;
+    }
+    #sectionThree div {
+        width: 90%;
+        align-items: unset;
+        justify-content: flex-start;
+    }
+    #sectionFour {
+        flex-direction: column;
+        align-items: center;
+    }
+    #sectionFour div {
+        width: 90%;
+    }
+    .sectionFourRight {
+        align-items: center;
+    }
+    #sectionFive {
+        flex-direction: column;
+        margin-top: 0px;
+    }
+    #sectionFive>div {
+        width: 100%;
+    }
+    #footer .logo {
+        margin-left: 8px;
+    }
+    #footer .icons {
+        margin-right: 8px;
+    }
+    #footer .footer-2 {
+        height: 700px;
+        flex-direction: column;
+        width: 100%;
+    }
+    .footer-2 div {
+        width: 100%;
+    }
+    .detailBox-1 {
+        height: 20%;
+    }
+    .detailBox-2 {
+        height: 28%;
+    }
+    .detailBox-3 {
+        height: 30%;
+    }
+    .detailBox-4 {
+        height: 22%;
+    }
+    #footer ul {
+        position: static;
+        width: 31%;
+        margin: auto;
+    }
+}
