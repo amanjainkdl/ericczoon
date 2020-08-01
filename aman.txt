@@ -1,2 +1,2 @@
 This file is removed from .gitignore file
-this file is edited for showing direct commit
+this file is edited for showing direct commit.
