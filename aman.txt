@@ -1,1 +1,2 @@
-This file is removed grom .gitignore file
+This file is removed from .gitignore file
+this file is edited for showing direct commit
